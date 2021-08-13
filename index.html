@@ -12,52 +12,90 @@
       crossorigin="anonymous"
     />
     <style>
+      @media (max-width:576px) {
+        .education-img {
+          display: none;
+        }
+        .tips-img {
+          display: none;
+        }
+        .tea-title {
+          margin: 20px;
+        }
+
+      }
       li {
         list-style: none;
       }
-      .footer {
+      footer {
+        background-color: #EEEEEE;
+        padding: 10px;
+        margin-top: 50px;
+      }
+    .footer, .rights {
         display: flex;
         justify-content:flex-end;
-        padding: 10px;
-        background-color: #EEEEEE;
-
-
+      }
+      .rights {
+        margin-right: 22px;
+        opacity: 0.7;
       }
       
-      .cart {
-        text-decoration: none;
-        color: #000;
-        border: 1px solid #000;
-        padding: 10px;
-      }
-      .cart:hover {
-        color: #1c6d4f;
-      }
+      .footer-link{
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000;
+          }
+          .cart {
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            padding: 10px;
+          }
+          .cart:hover {
+            color: #1c6d4f;
+          }
+            
+          #header-img {
+            width: 50px;
+          }
+          #video {
+            display: block;
+            margin: 40px auto;
+          }
+          .tea-title {
+            text-align: center;
+            font-weight: bold;
+          }
+          #shop {
+            
+            border-radius: 4px;
+          }
+          .update-btn {
+            background-color: #1c6d4f;
+            margin: 10px;
+            padding: 10px 30px;
         
-      #header-img {
-        width: 50px;
-      }
-      #video {
-        display: block;
-        margin: 40px auto;
-      }
-      .tea-title {
-        text-align: center;
-        font-weight: bold;
-      }
-
+          }
+          #education, #tips {
+            margin: 70px;
+            background-color: #EEEEEE;
+    
+          }
+      
+      
     </style>
   </head>
   <body>
     <div class="body-wrapper">
       <header id="header">
         <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
+          <div class="container">
+            <a class="navbar-brand" href="/"
               ><img
                 id="header-img"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/139/original/kisspng-shopping-cart-logo-clip-art-shoping-5ad149c1c4a505.7308437515236653458055.png?1628805527"
-                alt="shopping cart Logo"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/200/original/hand-drawn-tea-culture-objects-teapot-lemon-cinnamon-honey-tea-leaf-vector-sketch-card-template_114579-836.jpg?1628884385"
+                alt="TeaTime-Logo"
                 class="img-fluid"
               />
               TeaTime</a
@@ -76,18 +114,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#education"
                   >Education</a
                 >
-                <a class="nav-link" href="#">Shop</a>
-                <a class="nav-link" href="#">Gift Card</a>
+                <a class="nav-link active" href="#shop">Shop</a>
+                <a class="nav-link active" href="#tips">Tips</a>
               </div>
             </div>
           </div>
         </nav>
       </header>
       <section id="shop">
-        <div class="container m-5">
+        <div class="container shop-wrapper m-5">
           <h1 class="text-center">Shop with us</h1>
           <div class="row">
             <div class="col-sm-3 tea-title">
@@ -145,8 +183,8 @@
           </div>
         </div>
       </section>
-      <div class="container m-5">
-        <section id="Education">
+      <section id="education">
+          <div class="container">
           <div class="row">
             <div class="col-sm-6">
               <h2>Green tea,the Miracle plant</h2>
@@ -166,36 +204,60 @@
                 benefits, which may include:
               </p>
               <ul>
-                <li>Improved Brain Function</li>
-                <li>Fat Loss</li>
-                <li>Protecting against cancer</li>
-                <li>Lowering the risk of heart disease</li>
+                <li>-Improved Brain Function</li>
+                <li>-Fat Loss</li>
+                <li>-Protecting against cancer</li>
+                <li>-Lowering the risk of heart disease</li>
               </ul>
+  
             </div>
-            <div class="col-sm-6 mt-5">
+            <div class="col-sm-6 ">
               <img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/168/original/green-tea-kettle-1200x628-facebook-1200x628.jpg?1628863986"
-              alt="green-tea-kettle-"
-              class="img-fluid"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/197/original/77770043.jpg?1628881648"
+              alt="green-tea-sachet"
+              class="img-fluid education-img"
               />
+            </div>
+
+          </div>
+        </section>
+        <div class="embed-responsive embed-responsive-16by9"></div>
+        <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/t4Gcrc9lMog"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+        ></iframe>
+      </div>
+          
+        <section id="tips" >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/168/original/green-tea-kettle-1200x628-facebook-1200x628.jpg?1628863986" alt="green-tea-kettle" class="img-fluid tips-img">
+              </div>
+              <div class="col-sm-6 ">
+                <h2>Tips for brewing loose leaf green tea</h2>
+                <p>
+To make a perfect cup of green tea, every time and with any tea leaf, follow these guidelines</p>
+           <ul>
+             <li>1. Preheat your teaware</li>
+             <li>2. Use a special teapot for green tea only</li>
+             <li>3. Use glass or ceramic for your teaware</li>
+             <li>4. Avoid paper filters</li>
+             <li>5. Always use fresh spring water </li>
+             <li>6. Drink it while it's still hot</li>
+           </ul>   
+           </div>
             </div>
           </div>
         </section>
-          <div class="container">
-          <div class="embed-responsive embed-responsive-16by9"></div>
-          <iframe
-          id="video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/t4Gcrc9lMog"
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen
-          ></iframe>
-        </div>
-        </div>
+        <h2 class="text-center mt-5">Brew with Love</h2>
         <form
-          class="text-center m-5"
+          class="text-center "
           id="form"
           action="https://www.freecodecamp.com/email-submit"
         >
@@ -207,18 +269,17 @@
             required
           />
           <br/>
-          <input id="submit" type="submit" value="Get Updates" class="btn" />
+          <input id="submit" type="submit" value="Get Updates" class="btn update-btn" />
         </form>
       </div>
       <footer>
-        <div class="footer">
-          <ul> 
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
+        <ul class="footer">
+           
+        <li><a class="footer-link" href="#">Privacy</a></li>
+        <li><a class="footer-link" href="#">Terms</a></li>
+        <li><a class="footer-link" href="#">Contact</a></li>
       </ul>
-      <div>Copyright 2021, Tea Time </div>
-    </div>
+      <span class="rights" >Copyright 2021, Tea Time </span>
       </footer>
     </div>
     <script
