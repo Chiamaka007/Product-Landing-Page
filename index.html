@@ -12,13 +12,40 @@
       crossorigin="anonymous"
     />
     <style>
-      img {
+      li {
+        list-style: none;
+      }
+      .footer {
+        display: flex;
+        justify-content:flex-end;
+        padding: 10px;
+        background-color: #EEEEEE;
+
+
+      }
+      
+      .cart {
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #000;
+        padding: 10px;
+      }
+      .cart:hover {
+        color: #1c6d4f;
+      }
+        
+      #header-img {
         width: 50px;
       }
       #video {
         display: block;
         margin: 40px auto;
       }
+      .tea-title {
+        text-align: center;
+        font-weight: bold;
+      }
+
     </style>
   </head>
   <body>
@@ -33,7 +60,7 @@
                 alt="shopping cart Logo"
                 class="img-fluid"
               />
-              Boutique</a
+              TeaTime</a
             >
 
             <button
@@ -50,7 +77,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >Our Story</a
+                  >Education</a
                 >
                 <a class="nav-link" href="#">Shop</a>
                 <a class="nav-link" href="#">Gift Card</a>
@@ -59,27 +86,140 @@
           </div>
         </nav>
       </header>
-      <section id="my-story">
-        <iframe
+      <section id="shop">
+        <div class="container m-5">
+          <h1 class="text-center">Shop with us</h1>
+          <div class="row">
+            <div class="col-sm-3 tea-title">
+              <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/170/original/ginger_lemon_green_1_1024x1024.jpg?1628865018"
+                alt="ginger-lemon-green-tea"
+                class="img-fluid"
+              />
+              <p>
+                Ginger Lemon Green Tea
+                <br />
+                $5:99
+              </p>
+              <a class="cart" href="#">Add to Cart</a>
+            </div>
+            <div class="col-sm-3 tea-title">
+              <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/175/original/RoseBlackPS.jpg?1628866283"
+              alt="Rose-sencha-green-tea"
+              class="img-fluid"
+              />
+              <p>
+                Rose Sencha Green Tea
+                <br />
+                $6:99
+              </p>
+              <a class="cart" href="#">Add to Cart</a>
+            </div>
+            <div class="col-sm-3 tea-title">
+              <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/174/original/LemonBlackPS175.jpg?1628866269"
+                alt="Lemon-green-tea"
+                class="img-fluid"
+                />
+              <p>
+                Lemon Sana Green Tea
+                <br />
+                $6:99
+              </p>
+              <a class="cart" href="#">Add to Cart</a>
+            </div>
+            <div class="col-sm-3 tea-title">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/176/original/turmericchillichaips.jpg?1628866305"
+                alt="Tumeric-green-tea"
+                class="img-fluid"
+              />
+              <p>
+                Tumeric Green Tea
+                <br />
+                $5:99
+              </p>
+              <a class="cart" href="#">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container m-5">
+        <section id="Education">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Green tea,the Miracle plant</h2>
+              <p>
+                <em
+                  >Green tea is made from unoxidized leaves and is one of the
+                  least processed types of tea. For this reason, it contains the
+                  most antioxidants and beneficial polyphenols. People used
+                  green tea in traditional Chinese and Indian medicine to
+                  control bleeding and heal wounds, aid digestion, improve heart
+                  and mental health, and regulate body temperature.</em
+                  >
+                  <br />
+                  <br />
+                Green tea is touted to be one of the healthiest beverages on the
+                planet. It’s loaded with antioxidants that have many health
+                benefits, which may include:
+              </p>
+              <ul>
+                <li>Improved Brain Function</li>
+                <li>Fat Loss</li>
+                <li>Protecting against cancer</li>
+                <li>Lowering the risk of heart disease</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 mt-5">
+              <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/168/original/green-tea-kettle-1200x628-facebook-1200x628.jpg?1628863986"
+              alt="green-tea-kettle-"
+              class="img-fluid"
+              />
+            </div>
+          </div>
+        </section>
+          <div class="container">
+          <div class="embed-responsive embed-responsive-16by9"></div>
+          <iframe
           id="video"
-          width="800"
-          height="400"
+          width="560"
+          height="315"
           src="https://www.youtube.com/embed/t4Gcrc9lMog"
           title="YouTube video player"
           frameborder="0"
           allowfullscreen
-        ></iframe>
-      </section>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input
-          name="email"
-          id="email"
-          type="email"
-          placeholder="Enter your email address"
-          required
-        />
-        <input id="submit" type="submit" value="Get Started" class="btn" />
-      </form>
+          ></iframe>
+        </div>
+        </div>
+        <form
+          class="text-center m-5"
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <br/>
+          <input id="submit" type="submit" value="Get Updates" class="btn" />
+        </form>
+      </div>
+      <footer>
+        <div class="footer">
+          <ul> 
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div>Copyright 2021, Tea Time </div>
+    </div>
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
