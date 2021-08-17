@@ -1,0 +1,72 @@
+@media (max-width:576px) {
+        .education-img {
+          display: none;
+        }
+        .tips-img {
+          display: none;
+        }
+        .tea-title {
+          margin: 20px;
+        }
+
+      }
+      li {
+        list-style: none;
+      }
+      footer {
+        background-color: #EEEEEE;
+        padding: 10px;
+        margin-top: 50px;
+      }
+    .footer, .rights {
+        display: flex;
+        justify-content:flex-end;
+      }
+      .rights {
+        margin-right: 22px;
+        opacity: 0.7;
+      }
+      
+      .footer-link{
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000;
+          }
+          .cart {
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            padding: 10px;
+          }
+          .cart:hover {
+            color: #1c6d4f;
+          }
+            
+          #header-img {
+            width: 50px;
+          }
+          #video {
+            display: block;
+            margin: 40px auto;
+          }
+          .tea-title {
+            text-align: center;
+            font-weight: bold;
+          }
+          #shop {
+            
+            border-radius: 4px;
+          }
+          .update-btn {
+            background-color: #1c6d4f;
+            margin: 10px;
+            padding: 10px 30px;
+        
+          }
+          #education, #tips {
+            margin: 70px;
+            background-color: #EEEEEE;
+    
+          }
+      
+      
