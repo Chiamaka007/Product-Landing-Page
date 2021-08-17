@@ -58,7 +58,8 @@
             border-radius: 4px;
           }
           .update-btn {
-            background-color: #1c6d4f;
+            border: 2px solid #1c6d4f;
+            background-color: #EEEEEE;
             margin: 10px;
             padding: 10px 30px;
         
