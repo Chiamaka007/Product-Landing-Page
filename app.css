@@ -62,7 +62,12 @@
             background-color: #EEEEEE;
             margin: 10px;
             padding: 10px 30px;
+            transition: all 200ms ease-in-out;
         
+          }
+          .update-btn:hover {
+              cursor: pointer;
+              background-color: #1c6d4f;
           }
           #education, #tips {
             margin: 70px;
